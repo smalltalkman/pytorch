@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
       - name: Fast-Forward
         run: |
           git remote add upstream https://github.com/pytorch/pytorch.git
-          git pull --ff-only upstream master
-          git push origin master
+          git pull --ff-only upstream main
+          git push origin main
